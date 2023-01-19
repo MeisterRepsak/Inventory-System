@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 0
   itemName: Wood
   description: Used to craft pretty much everything.
-  prefab: {fileID: 0}
+  prefab: {fileID: 4186109802276807052, guid: 1d64e0d12c6f8ac4893f570600d5faea, type: 3}
   icon: {fileID: 2800000, guid: 32139fe879f2db245bac71c8b1139dce, type: 3}
   type: 0
   rarity: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 3
   itemName: Rare Blade
   description: This is a rare blade
-  prefab: {fileID: 0}
+  prefab: {fileID: 4628360117254585422, guid: 80ec03027eb6f4f46ab635bf267d6299, type: 3}
   icon: {fileID: 2800000, guid: fbb6fab5a2903cf418df192cb3b0947d, type: 3}
   type: 0
   rarity: 2

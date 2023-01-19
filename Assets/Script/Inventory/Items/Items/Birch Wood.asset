@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 2
   itemName: Birch Wood
   description: More durable than normal wood
-  prefab: {fileID: 0}
+  prefab: {fileID: 4089233541238040260, guid: 6f947d744bb2f0b469f3618a75dddc6b, type: 3}
   icon: {fileID: 2800000, guid: 93f529b7848aea545a6c08ddcce431ff, type: 3}
   type: 0
   rarity: 1

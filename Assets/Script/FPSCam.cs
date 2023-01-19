@@ -11,8 +11,11 @@ public class FPSCam : MonoBehaviour
 
     Transform parent;
     Transform cam;
+
+    PlayerMovement pm;
     void Start()
     {
+        pm = FindObjectOfType<PlayerMovement>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         cam = Camera.main.transform;
@@ -22,6 +25,8 @@ public class FPSCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pm.isInterrupted)
+            return;
         targetXRotation -= Input.GetAxisRaw("Mouse Y");
         targetYRotation += Input.GetAxisRaw("Mouse X");
 

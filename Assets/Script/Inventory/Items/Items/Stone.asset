@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 1
   itemName: Stone
   description: A basic crafting material
-  prefab: {fileID: 0}
+  prefab: {fileID: 1634041130434578340, guid: 14f5f562090b8e14a95b98f3d420f89f, type: 3}
   icon: {fileID: 2800000, guid: 2118212fcf7396842ba2472066aceafa, type: 3}
   type: 0
   rarity: 0

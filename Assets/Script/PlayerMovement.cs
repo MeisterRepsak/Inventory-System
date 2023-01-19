@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
 
     float xAxis;
-    float zAxis; 
+    float zAxis;
+
+    public bool isInterrupted;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -20,11 +22,26 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if(isInterrupted && !Cursor.visible)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else if(!isInterrupted && Cursor.visible)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        if (isInterrupted)
+            return;
         xAxis = Input.GetAxisRaw("Horizontal");
         zAxis = Input.GetAxisRaw("Vertical");
     }
     void FixedUpdate()
     {
+        if (isInterrupted)
+            return;
         Movement();
     }
 
